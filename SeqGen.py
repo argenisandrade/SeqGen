@@ -11,3 +11,6 @@ print(random_sequence1)
 
 random_sequence2 = generate_random_amino_acid_sequence()
 print(random_sequence2)
+
+random_sequence3 = generate_random_amino_acid_sequence()
+print(random_sequence3)
