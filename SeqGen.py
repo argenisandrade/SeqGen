@@ -29,7 +29,7 @@ def generate_random_amino_acid_sequence(min_length=10, max_length=50, excluded_m
         length = random.randint(min_length, max_length)
         sequence = ''.join(random.choice(amino_acids) for _ in range(length))
         valid_sequence = all(motif not in sequence for motif in excluded_motifs)
-
+        
     return sequence
 
 # Example usage
@@ -37,4 +37,3 @@ fasta_file_path = 'motifs.fasta'  # Replace with the actual path to your FASTA f
 motifs = read_fasta_as_set(fasta_file_path)
 random_sequence = generate_random_amino_acid_sequence(excluded_motifs=motifs)
 print(random_sequence)
-
